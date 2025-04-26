@@ -1,0 +1,69 @@
+<p>Create new acccount</p>
+<h3>Register</h3>
+    
+ <form [formGroup]="loginForm" (ngSubmit)="sendData(loginForm)">
+ <div class="row text-center">
+    <div class="col-md-6">   <mat-form-field class="example-full-width">
+        <mat-label>First name</mat-label>
+        <input matInput  formControlName="first_name">
+      </mat-form-field></div>
+      <div class="col-md-6"> 
+        <mat-form-field class="example-full-width">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="last_name">
+          </mat-form-field></div>
+         <div class="col-md-12">
+               <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+         
+            <mat-error *ngIf="emailFormControl?.hasError('required')">
+              Email is required
+            </mat-error>
+            
+            <mat-error *ngIf="emailFormControl?.hasError('email') && !emailFormControl?.hasError('required')">
+              Please enter a valid email address
+            </mat-error>
+          
+          </mat-form-field> 
+        
+        </div>
+        <div class="col-md-12">  <div class="example-container ">
+            <mat-form-field >
+              <mat-label>Enter your password</mat-label>
+              <input formControlName="password" matInput [type]="hide() ? 'password' : 'text'" />
+              <button
+              type="button"
+                mat-icon-button
+                matSuffix
+                (click)="clickEvent($event)"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide()"
+              >
+                <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+             
+            </div></div>
+          <div class="col-md-12">
+          
+              <mat-form-field class="example-full-width">
+  <mat-label>Role</mat-label>
+  <mat-select formControlName="role">
+    <mat-option value="Admin">Admin</mat-option>
+    <mat-option value="Customer">Customer</mat-option>
+  </mat-select>
+</mat-form-field>
+        </div>
+ </div>
+
+ <div class="d-flex flex-column ">
+    <button class="btn btn1 mb-3 mt-3" [disabled]="loginForm.invalid"   routerLink="/forget-password" type="submit"> Register</button>
+    <button type="button" class="btn btn2 ">long</button></div>
+ </form>
+
+  
+
+  
+
+  

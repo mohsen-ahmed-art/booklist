@@ -1,0 +1,46 @@
+
+
+nav.navbar{ height: 40px !important;background-color: #393280 !important;
+    ;}
+  
+    fa-icon{
+        color: #fff !important;
+        width: 10.733138084411621px;
+height: 20.03519058227539px;
+top: 18px;
+left: 1134px;
+
+    }
+    a span{
+        font-family: Inter;
+font-weight: 600;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 2%;
+color: #FFFFFF;
+
+    }
+    @media (max-width: 768px) {
+       nav.navbar{
+        height:auto !important;
+       }
+      
+     
+      }
+      @media (max-width: 820px) {
+        
+        nav.navbar{
+            height:auto !important;
+           }
+      }
+      @media (max-width: 853px) {
+       
+        nav.navbar{
+            height:auto !important;
+           }
+      }
+      @media (max-width: 575px) {
+        nav.navbar{
+            height:auto !important;
+           }
+      }

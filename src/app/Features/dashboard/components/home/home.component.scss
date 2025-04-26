@@ -1,0 +1,84 @@
+.slider{background: linear-gradient(78.83deg, #FFE6E6 8.52%, #F5FFFE 68.88%, #FFFFFF 101.74%);
+    width: 100% !important;
+ }
+.slider h1{
+    font-family: Inter;
+font-weight: 600;
+font-size: 60px;
+line-height: 145%;
+letter-spacing: -2%;
+text-transform: capitalize;
+color: #393280;
+
+}
+.slider b{
+    font-family: Inter;
+font-weight: 500;
+font-size: 22px;
+line-height: 180%;
+letter-spacing: 4%;
+color: #393280CC;
+
+}
+.slider .btnSlider{width: 197px;
+    height: 61px;
+    top: 401px;
+    left: 149px;
+  color: #393280;
+  border: 1px solid #393280;
+  text-align: center;
+  
+    }
+    .slider ul{
+        width: 132px;
+height: 39px;
+top: 506px;
+left: 149px;
+border-width: 1px;
+
+    }
+//      .item1{
+//         width: 39px;
+//         height: 39px;
+//         top: 506px;
+//         left: 149px;
+//         border-width: 1px;
+        
+// color: #ED553B;
+// border: 1px solid #ED553B;
+
+//     }
+
+      
+  
+   
+    .circle {
+        width: 39px;
+        height: 39px;
+        border: 2px solid #ED553B; /* الأزرق */
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .inner-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ff5b5b; /* الأحمر */
+        border-radius: 50%;
+      }
+      
+      .small-circles {
+        display: flex;
+        gap: 8px; /* مسافة بين الدوائر الصغيرة */
+      }
+      
+      .small-circle {
+        width: 8px;
+        height: 8px;
+        background-color: #c4c4c4; /* رمادي */
+        border-radius: 50%;
+      }
+      

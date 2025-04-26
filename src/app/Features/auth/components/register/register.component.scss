@@ -1,0 +1,68 @@
+mat-form-field input {
+    width: 100%;
+    font-size: 16px; /* تغيير حجم الخط */
+    padding: 12px; /* تعديل حجم الحشو */
+    border: 1px solid #d40707; /* تغيير اللون */
+    border-radius: 4px; /* جعل الحواف دائرية */
+    outline: none; /* إزالة الحد عند التحديد */
+    color: #e70808; /* تغيير لون النص */
+  }   
+  mat-form-field input:focus {
+    border-color: #f0f6fc; /* تغيير لون الحد عند التحديد */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* إضافة تأثير الظل عند التحديد */
+  }
+  mat-form-field {
+    background-color: #ffffff; /* تغيير الخلفية */
+    border-radius: 8px; /* جعل الحواف دائرية */
+    /* إضافة مسافة بين العناصر */
+    width: 75%;
+    height:auto;
+    border-bottom: #ffffff;
+  }
+  .btn1{
+    width: 400;
+height: 60;
+top: 854px;
+left: 880px;
+border-radius: 4px;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+gap: 10px;
+background: #EF6B4A;
+
+  }
+  .btn2{
+    width: 400;
+height: 60;
+top: 924px;
+left: 880px;
+border-radius: 4px;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 10px;
+padding-left: 20px;
+gap: 10px;
+border-width: 1px;
+border: 1px solid #6251DD;
+color: #6251DD;
+  }
+  h3{
+    font-family: Manrope;
+font-weight: 700;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #090937;
+
+  }
+  p{font-family: Manrope;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #09093799;
+
+    }
+  
