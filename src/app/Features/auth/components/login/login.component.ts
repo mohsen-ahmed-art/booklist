@@ -64,8 +64,7 @@ export class LoginComponent {
      this._UrlService.login (data.value).subscribe({
       next:(res)=>{
         console.log(res)
-        localStorage.setItem('token', res.data
-          .accessToken);
+        localStorage.setItem('token', res.data.accessToken);
     
       },error:(err)=>{
         console.log(err.error.message );

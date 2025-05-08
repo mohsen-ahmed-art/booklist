@@ -1,0 +1,59 @@
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card img {
+    border-radius: 15px 15px 0 0;
+}
+.book-price {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+.view-more-btn {
+    width: 197px;
+height: 61px;
+top: 595px;
+left: 772px;
+border-radius: 7px;
+border-width: 1px;
+border: 1px solid #393280;
+color: #393280;
+
+}
+.hheder{font-family: Inter;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #393280;
+
+    }
+    .hheder4{
+        font-family: Inter;
+font-weight: 600;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+color: #393280;
+    }
+.right{line-height: 200px;}
+.ppp{line-height: 2;font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 208%;
+    letter-spacing: 2%;
+    color: #7A7A7A;
+
+    }
+    .price{font-family: Inter;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        text-transform: capitalize;
+        color: #ED553B;
+
+        }

@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(to bottom right, #fdf0f0, #f9f9ff);
+    font-family: Arial, sans-serif;
+  }
+
+  .item{
+    background: linear-gradient(73.93deg, #FFE5E5 11.18%, #F5FFFE 97.53%);
+
+  }
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  .form-control {
+    border-radius: 10px;
+  }
+  .btn-proceed {
+    background-color: #f44;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+  }
+  .btn-proceed:hover {
+    background-color: #c33;
+  }
+  .product-img {
+    width: 40px;
+  }
+  .section-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }

@@ -9,6 +9,7 @@ import {
   faHeart,
   faShoppingCart
 } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   imports: [  MatIconModule,
@@ -25,4 +26,8 @@ export class NavbarComponent {
   faHeart = faHeart;
   
   faShoppingCart = faShoppingCart;
+  constructor(private _Router:Router){}
+  goToRegister() {
+    this._Router.navigate(['/dashboard/cart']);
+  }
 }

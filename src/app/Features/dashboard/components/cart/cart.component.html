@@ -1,1 +1,84 @@
-<p>cart works!</p>
+
+<div class="container">
+    <div class="row g-4">
+      <!-- Product Table -->
+      <div class="col-lg-8 item">
+        <div class="card p-3 item">
+          <div class="section-title mb-3">Products Details</div>
+          <table class="table table-bordered text-center align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Num</th>
+                <th>Book</th>
+                <th>Amount</th>
+                <th>Cost</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+            
+            
+              <tr *ngFor="let item of basket">
+                <td></td>
+                <td><img src="img/book3 4.png" class="product-img" alt="book cover"></td>
+              
+                <td>
+                  <button class="btn btn-sm btn-outline-secondary" (click)="decrementQuantity(item)">-</button>
+                  <span class="mx-2">{{ item.quantity }}</span>
+                  <button class="btn btn-sm btn-outline-secondary" (click)="incrementQuantity(item)">+</button>
+                </td>
+                <td></td>
+                <td><button class="btn btn-danger" (click)="removeItem(item._id)">
+                  <i class="fas fa-trash"></i> 
+                </button></td>
+              </tr> 
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <!-- Cart Summary -->
+      <div class="col-lg-4 item">
+        <div class="card p-3 mb-4 item">
+          <div class="section-title mb-2">Cart Total Cost</div>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">Total <span>{{ totalCost  }} AED</span></li>
+            <li class="list-group-item d-flex justify-content-between">Tax <span>1.6 AED</span></li>
+            <li class="list-group-item d-flex justify-content-between fw-bold">Total Cost <span>{{ totalCost }} AED</span></li>
+          </ul>
+          <button class="btn btn-proceed mt-3" (click)="goToRegister()"  routerLink="/visi" >Proceed 🛒</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Shipping Data -->
+    <div class="row mt-5">
+      <div class="col-12 item">
+        <div class="card p-4 mt-3 item">
+          <div class="section-title mb-3">Shipping Data</div>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="User Name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Country">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="City">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Address">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Phone Number">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

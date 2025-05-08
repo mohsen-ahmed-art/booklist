@@ -1,0 +1,93 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  .book-card {
+    transition: transform 0.3s ease;
+  }
+  .book-card:hover {
+    transform: translateY(-10px);
+  }
+  .book-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .book-title {
+    font-weight: bold;
+  }
+  .book-author {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  .book-price {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: #dc3545;
+  }
+  .view-all {
+    color: #dc3545;
+    font-weight: bold;
+    float: right;
+    margin-top: 1rem;
+  }
+  .add-to-cart {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    background: #ED553B;
+    color: #fff;
+
+  }
+  
+  .book-card:hover .add-to-cart {
+    opacity: 1;
+  }
+  @media (max-width: 430px) {
+    .book-img {
+        height: 500px;
+        object-fit: cover;
+      }
+   }
+
+   @media (max-width: 540px) {
+    .book-img {
+        height: 500px;
+        object-fit: cover;
+      }
+}
+.circle {
+    width: 39px;
+    height: 39px;
+    border: 2px solid #ED553B; /* الأزرق */
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inner-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ff5b5b; /* الأحمر */
+    border-radius: 50%;
+  }
+  
+  .small-circles {
+    display: flex;
+    gap: 8px; /* مسافة بين الدوائر الصغيرة */
+  }
+  
+  .small-circle {
+    width: 8px;
+    height: 8px;
+    background-color: #c4c4c4; /* رمادي */
+    border-radius: 50%;
+  }

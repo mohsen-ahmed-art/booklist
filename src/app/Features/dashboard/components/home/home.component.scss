@@ -37,21 +37,8 @@ left: 149px;
 border-width: 1px;
 
     }
-//      .item1{
-//         width: 39px;
-//         height: 39px;
-//         top: 506px;
-//         left: 149px;
-//         border-width: 1px;
-        
-// color: #ED553B;
-// border: 1px solid #ED553B;
 
-//     }
 
-      
-  
-   
     .circle {
         width: 39px;
         height: 39px;
@@ -81,4 +68,95 @@ border-width: 1px;
         background-color: #c4c4c4; /* رمادي */
         border-radius: 50%;
       }
+      .section-title {
+        color: #393280;
+
+        font-family: Inter;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+letter-spacing: 0%;
+
+      }
+  .card-title{
+  color: #393280;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  
+  }
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+  
+      .view-more-btn {
+        border: 1px solid #393280;
+     
+        // color: #000;
+        transition: all 0.3s ease;
+        color: #393280;
+        width: 197;
+        height: 61;
+        top: 483px;
+        left: 533px;
+        border-radius: 7px;
+        border-width: 1px;
+        
+      }
+  
+      // .view-more-btn:hover {
+      //   background-color: #000;
+      //   color: white;
+      // }
+      .promo-card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #fff;
+        padding: 20px;
+        // box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .promo-img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .promo-card h1{
+      font-family: Inter;
+      font-weight: 600;
+      font-size: 45px;
+      line-height: 66px;
+      letter-spacing: 0%;
       
+color: #393280;
+
+    }
+    .promo-card p{
+      font-family: Inter;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+letter-spacing: 5%;
+color: #393280;
+
+    }
+    .countdown {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #e74c3c;
+    }
+    .view-more-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .view-more-btn:hover {
+        background-color: #2980b9;
+    }
+    ul{
+    list-style: none;
+    }

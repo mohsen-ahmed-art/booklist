@@ -1,0 +1,27 @@
+
+<div class="container py-5">
+    <h2 class="section-title">New Release Books</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+      <div class="col-md-3" *ngFor="let item of categry">
+        <div class="card book-card h-100 text-center shadow-sm">
+          <img src="img/book3 4.png" class="card-img-top book-img" alt="Book 1">
+          <div class="card-body">
+            <!-- <button class="btn btn-danger btn-sm mb-2">Add to Cart</button> -->
+            <h5 class="book-title">{{ item.name }}</h5>
+            <p class="book-author">{{ item.description }}</p>
+            <p class="book-price">${{ item.price }}</p>
+            <button class="btn  add-to-cart" (click)="addToBasket(item._id)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+  
+      <ul class="d-flex justify-content-between mt-5">
+        <li class="item1 circle "><a class="inner-dot"></a></li>
+        <li class="small-circles small-circle mt-3"></li>
+        <li class="small-circles small-circle mt-3"></li>
+        <li class="small-circles small-circle mt-3"></li>
+    </ul>
+    </div>
+   
+   <a  class="view-all btn"  >View All Products →</a>
+  </div>

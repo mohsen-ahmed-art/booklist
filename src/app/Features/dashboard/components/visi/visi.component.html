@@ -1,0 +1,23 @@
+ <div class="container">
+    <div class="row">
+        <div class="col-md-12  text-center"><h2>Card Example</h2>
+            <div [formGroup]="checkoutForm">
+              <mat-form-field class="example-full-width mx-5" appearance="fill">
+                <input matInput placeholder="name" formControlName="name" />
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="fill">
+                <input matInput placeholder="Email" type="email" formControlName="email" />
+              </mat-form-field>
+              <ngx-stripe-elements
+             
+                [stripe]="stripe"
+                [elementsOptions]="elementsOptions"
+              >
+                <ngx-stripe-card [options]="cardOptions" />
+              </ngx-stripe-elements>
+            </div>
+            <button class="btn btn-warning mt-3" type="submit" (click)="createToken()">
+              payment
+            </button></div>
+    </div>
+ </div>
